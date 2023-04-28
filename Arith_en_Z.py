@@ -158,6 +158,7 @@ def det_solve():
         equation = input('Ecrivez l\'equation sous forme de "ax+by=c" tel que a, b et c ∈ ℤ* :\n')
     try:
         solution = solve(equation)
+        print(solution)
     except Exception as e:
         if str(e) == 'D(0) = ℤ':
             if english:
@@ -247,5 +248,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
